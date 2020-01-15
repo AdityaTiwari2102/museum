@@ -1,8 +1,8 @@
 #myTopnav.topnav
-  = link_to 'Home', root_path
-  = link_to 'Foundation', foundation_path
-  = link_to 'First of journey', first_of_journey_path
-  = link_to 'Founder', founder_path
-  = link_to 'Initial Board Members', initial_board_members_path
-  = link_to 'Pioneer', pioneer_path
-  = link_to 'Celebration', celebration_path
+  = link_to 'Home', root_path, class: "#{current_page?(root_path) ? 'active' : ''}"
+  = link_to 'Foundation', foundation_path, class: "#{request.fullpath.include?('/foundation') ? 'active' : ''}"
+  = link_to 'First of journey', first_of_journey_path, class: "#{request.fullpath.include?('/first_of_journey') ? 'active' : ''}"
+  = link_to 'Founder', founder_path, class: "#{request.fullpath.include?('/founder') ? 'active' : ''}"
+  = link_to 'Initial Board Members', initial_board_members_path, class: "#{request.fullpath.include?('/initial_board_members') ? 'active' : ''}"
+  = link_to 'Pioneer', pioneer_path, class: "#{request.fullpath.include?('/pioneer') ? 'active' : ''}"
+  = link_to 'Celebration', celebration_path, class: "#{request.fullpath.include?('/celebration') ? 'active' : ''}"
