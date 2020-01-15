@@ -9,6 +9,15 @@ body {
 .container {
   margin: 15px;
 }
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #2056AE;
@@ -32,4 +41,14 @@ body {
 
 .headoffice {
   width: 100%;
+}
+
+.founder {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: #F0E7E8;
+  .founder-text, .founder-img {
+    width: 50%;
+  }
 }
